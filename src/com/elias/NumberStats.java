@@ -19,6 +19,7 @@ public class NumberStats {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a number: ");
         int num = input.nextInt();
+        // Create a new MyNumber object
         MyNumber number = new MyNumber(num);
 
         // Printing out number stats
@@ -26,6 +27,8 @@ public class NumberStats {
         System.out.println("Is Number Odd: " + number.isOdd());
         System.out.println("Is Number Prime: " + number.isPrime());
 
+        // Closing the scanner
+        input.close();
     }
 }
 
@@ -85,6 +88,7 @@ class MyNumber {
         if (this.val == 1) {
             return false;
         }
+        // Check if the number is divisible by any number other than 1 and itself
         for (int i = 2; i < this.val; i++) {
             if (this.val % i == 0) {
                 return false;
