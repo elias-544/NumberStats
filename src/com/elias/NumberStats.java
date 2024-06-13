@@ -17,14 +17,14 @@ public class NumberStats {
     public static void main(String[] args) {
         // Get the user's input
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter a number");
+        System.out.println("Please enter a number: ");
         int num = input.nextInt();
         MyNumber number = new MyNumber(num);
 
         // Printing out number stats
-        System.out.println(number.isEven());
-        System.out.println(number.isOdd());
-        System.out.println(number.isPrime());
+        System.out.println("Is Number Even: " +number.isEven());
+        System.out.println("Is Number Odd: " + number.isOdd());
+        System.out.println("Is Number Prime: " + number.isPrime());
 
     }
 }
